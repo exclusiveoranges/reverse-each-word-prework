@@ -5,4 +5,11 @@ def reverse_each_word(string)
   new_array.push(element.reverse)
   end
 new_array.join(" ")
-end 
+end
+
+def reverse_each_word(string)
+  array = string.split
+  array.collect do |element|
+  element.reverse.join(" ")
+  end
+end
